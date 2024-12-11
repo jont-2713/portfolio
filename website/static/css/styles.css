@@ -1,0 +1,160 @@
+/* Generic styles */
+html, body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+body{
+    background: linear-gradient(to right, #478bd9, #4ad2da);
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+p{
+    margin: 0;
+    font-size: 1rem;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img{
+    display: inline-block;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+nav .nav-list {
+    gap: 20px;
+    padding-right: 20px;
+}
+
+nav .nav-list li {
+    display: inline-block;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.contact-circle {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #EEEEEE50;
+    padding: 20px 80px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+}
+
+.button:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+@media(max-width: 1000px) {
+    nav {
+        display: block;
+    }
+    nav ul {
+        padding-left: 10px;
+    }
+    nav .nav-list li {
+        display: block;
+    }
+    nav .nav-list li:hover {
+        background-color: #f3f3f350;
+        border-radius: 10px;
+    }
+    .contact-circle{
+        border: none;
+    }
+}
+
+/* Main Slide*/
+.slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 75px;
+}
+
+.slide-item-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.slide-item-1 h1{
+    margin: 30px 0px;
+}
+
+.slide-item-1 p:nth-child(even){
+    margin: 0px 100px 50px 0px;
+}
+
+.slide-item-1 p:nth-child(odd){
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.slide-item-2 img{
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width: 1350px){
+    .slide-item-1 h1{
+        margin: 15px 0px;
+    }
+    .slide-item-1 p:nth-child(even){
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .slide{
+        grid-template-columns: 1fr;
+        padding: 0px 40px;
+    }
+    .slide-item-1{
+        padding: 0px;
+    }
+    .slide-item-2{
+        display: none;
+    }
+}
+
+/* Cards and burger */
+

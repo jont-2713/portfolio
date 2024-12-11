@@ -1,9 +1,18 @@
 <!-- templates/portfolio/home.html -->
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h2>Welcome to My Portfolio</h2>
-<p>This is the home page of my portfolio.</p>
+<div class="slide">
+    <div class="slide-item-1">
+        <h1>Jonty Godfrey<br /> Developer</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam earum deserunt vel omnis facilis sint ipsa iure dignissimos obcaecati?</p>
+        <p><a class="button" href="#">Portfolio</a></p>
+    </div>
+    <div class="slide-item-2">
+        <img src="{% static 'images/programing.png' %}" alt="Test" />
+    </div>
+</div>
 {% endblock %}
