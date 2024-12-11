@@ -4,7 +4,8 @@
 {% block title %}Contact - My Portfolio{% endblock %}
 
 {% block content %}
-<h1>Contact Us</h1>
+<div class="contact-form center">
+    <h1>Contact Us</h1>
 
     {% if messages %}
         <ul>
@@ -17,7 +18,8 @@
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Submit</button>
+        <button type="submit" class="button">Submit</button>
     </form>
+</div>
 {% endblock %}
 

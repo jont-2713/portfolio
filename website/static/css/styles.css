@@ -5,6 +5,7 @@ html, body{
     height: 100%;
     color: #ffffff;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .bg{
@@ -26,6 +27,10 @@ h1{
 p{
     margin: 0;
     font-size: 1rem;
+}
+
+ul{
+    padding: 0px;
 }
 
 li {
@@ -52,6 +57,37 @@ img{
 
 i{
     font-size: 25px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    display: block;
+    margin-top: 5px;
+}
+
+input, textarea{
+    border: 1px solid #f3f3f3;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+button{
+    color: #ffffff;
 }
 
 /* Navigation */
@@ -90,14 +126,19 @@ nav .nav-list li {
 .button {
     text-decoration: none;
     background-color: #EEEEEE50;
-    padding: 20px 80px;
+    border: none;
     border-radius: 25px;
-    font-size: 1.3rem;
+    padding: 10px 20px;
 }
 
 .button:hover{
     text-decoration: none;
     opacity: 0.8;
+}
+
+.portfolio{
+    font-size: 1.3rem;
+    padding: 20px 80px;
 }
 
 @media(max-width: 1000px) {
@@ -283,6 +324,11 @@ footer p{
         flex-direction: row;
         justify-content: center;
     }
+}
+
+/* Forms */
+.contact-form button{
+    margin-top: 10px;
 }
 
 
