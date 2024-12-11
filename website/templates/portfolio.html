@@ -5,6 +5,19 @@
 
 {% block content %}
 <section>
-    <p>Test</p>
+<section class="bg">
+    <section class="info">
+        <div class="card-block">
+            {% for project in projects %}
+                <div class="card card-project">
+                    <img src="{{ project.filePath.url }}" alt="{{ project.title }}">
+                    <div class="pd-10">
+                        <h3>{{ project.title }}</h3>
+                        <p class="card-text">{{ project.description }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
 {% endblock %}

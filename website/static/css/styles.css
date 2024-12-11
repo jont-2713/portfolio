@@ -90,6 +90,16 @@ button{
     color: #ffffff;
 }
 
+.card-project{
+    padding: 0px !important;
+    border: 1px solid rgba(128, 128, 128, 0.431)important;
+    border-radius: 15x !important; 
+}
+
+.pd-10{
+    padding: 10px;
+}
+
 /* Navigation */
 nav {
     display: flex;
@@ -253,6 +263,11 @@ i{
 
 .info .card-block .card p, .info .card-block .card h4{
     margin: 0;
+}
+
+.info .card img{
+    width: 100%;
+    height: auto;
 }
 
 .card{

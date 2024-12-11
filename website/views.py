@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
-from .forms import ContactForm
+from .forms import ContactForm, ProjectForm
+from .models import Project
 from django.contrib import messages
 
 def home(request):
@@ -17,4 +18,6 @@ def contact(request):
     return render(request, 'contact.html', {'form': form})
 
 def portfolio(request):
-    return render(request, 'portfolio.html')
+    # Fetch all the projects from the database
+    projects = Project.objects.all()
+    return render(request, 'portfolio.html', {'projects': projects})
