@@ -7,6 +7,10 @@ html, body{
     font-size: 16px;
 }
 
+.bg{
+    background-color: white;
+}
+
 body{
     background: linear-gradient(to right, #478bd9, #4ad2da);
 }
@@ -129,7 +133,7 @@ nav .nav-list li {
 .slide{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px 75px;
+    padding: 120px 75px; /* Adjust */
 }
 
 .slide-item-1{
@@ -148,8 +152,7 @@ nav .nav-list li {
 }
 
 .slide-item-1 p:nth-child(odd){
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-bottom: 50px;
 }
 
 .slide-item-2 img{
@@ -179,5 +182,107 @@ nav .nav-list li {
     }
 }
 
-/* Cards and burger */
+/* Information Section */
+
+i{
+    font-size: 1.5rem;
+}
+
+.info{
+    padding: 50px 50px;
+}
+
+.info .card-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.info .card-block .card{
+    padding: 20px;
+    border: 1px solid #f3f3f3;
+    border-radius: 10px;
+}
+
+.info .card-block .card:hover{
+    padding: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
+}
+
+.info .card-block .card p, .info .card-block .card h4{
+    margin: 0;
+}
+
+.card{
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.card-intro{
+    padding: 10px 0px 5px 0px;
+    color: #00000070;
+    text-transform: uppercase;
+}
+
+.info .card-block .card h4{
+    padding: 0px 0px 15px 0px;
+    font-size: 1.2em;
+    
+}
+
+.card-text{
+    color: #00000070;
+}
+
+@media(max-width: 1000px){
+    .info .card-block{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .info .card-block .card{
+        padding: 20px;
+        border: 1px solid #f3f3f3;
+        border-radius: 10px;
+    }
+    
+    .info .card-block .card:hover{
+        padding: 20px;
+        border: 1px solid #c9c9c9;
+        border-radius: 10px;
+    }
+}
+
+/* Footer */
+footer{
+    padding: 25px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+}
+
+footer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media(max-width: 1000px) {
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    footer p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
 
