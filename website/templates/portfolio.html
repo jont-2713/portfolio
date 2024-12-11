@@ -11,9 +11,10 @@
             {% for project in projects %}
                 <div class="card card-project">
                     <img src="{{ project.filePath.url }}" alt="{{ project.title }}">
-                    <div class="pd-10">
+                    <div class="pb-10">
                         <h3>{{ project.title }}</h3>
-                        <p class="card-text">{{ project.description }}</p>
+                        <p class="card-text mb-10">{{ project.description }}</p>
+                        <p class="button dark"><a href="{{ project.websiteURL }}">View</a></p>
                     </div>
                 </div>
             {% endfor %}

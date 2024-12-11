@@ -92,14 +92,22 @@ button{
 
 .card-project{
     padding: 0px !important;
-    border: 1px solid rgba(128, 128, 128, 0.431)important;
+    border: none !important;
     border-radius: 15x !important; 
 }
 
-.pd-10{
-    padding: 10px;
+.pb-10{
+    padding-bottom: 10px;
 }
 
+.mb-10{
+    margin-bottom: 10px !important;
+}
+
+.dark{
+    background: linear-gradient(to right, #478bd9, #4ad2da) !important;
+    display: inline-block;
+}
 /* Navigation */
 nav {
     display: flex;
